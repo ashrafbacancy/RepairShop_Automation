@@ -30,6 +30,7 @@ public class LoginTest extends BaseTest {
 	public void CreateCustomer() throws Exception {
 		// System.out.println("-------------------------------");
 		// getting to the url
+		//
 
 		
 	//	
