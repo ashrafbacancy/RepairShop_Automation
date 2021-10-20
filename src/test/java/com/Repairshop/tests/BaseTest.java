@@ -56,6 +56,7 @@ public class BaseTest {
 //		WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "/" + "Resources" + "/" + "chromedriver.exe");
+		//
 
 		ChromeOptions options;
 	//	System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
