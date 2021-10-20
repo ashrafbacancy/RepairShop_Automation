@@ -2,9 +2,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" thread-count="2" parallel="methods">
 
-<listeners>
-    <listener class-name = "Extras.Listeneres"></listener>
-    </listeners>
 
  
     <test  name="Test">

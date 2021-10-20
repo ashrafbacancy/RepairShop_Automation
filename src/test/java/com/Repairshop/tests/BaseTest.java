@@ -36,7 +36,7 @@ public class BaseTest {
 	//static WebDriver dr;
 	public  ThreadLocal<WebDriver>driver=new ThreadLocal<WebDriver>();
 	
-	public PageCollection pages;
+	public PageCollection pages;;
 	
 
 	//public  WebDriver Currentdriver;

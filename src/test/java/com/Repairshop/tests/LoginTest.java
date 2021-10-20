@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest {
 	
 	public WebDriver Driver;
 
-	@Test
+	@Test(priority=1)
 	public void CreateCustomer() throws Exception {
 		// System.out.println("-------------------------------");
 		// getting to the url
@@ -37,15 +37,16 @@ public class LoginTest extends BaseTest {
 	//	Listeneres.extenttest.get().log(Status.INFO, "for test automation in part 1");
 		pages.getLoginPage().getURL("https://abhiabc.repairshopr.com/users/sign_in");
 
-	Assert.assertTrue(true);;
+	
 		// Entering login credentials
 //	//	Listeneres.extenttest.get().log(Status.INFO, "set email and password.");
-//		pages.getLoginPage().SetEmailAndPassword("teststackshare@gmail.com", "Repairshop@12345");
+		pages.getLoginPage().SetEmailAndPassword("teststackshare@gmail.com", "Repairshop@12345");
 //
 //		// Clicking On Login Button
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Login Button.");
-//		pages.getLoginPage().ClickOnLoginButton();
+		pages.getLoginPage().ClickOnLoginButton();
 //
+		Assert.assertTrue(false);
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Customer tab.");
 //		pages.getCustomersPage().clickOnCustomersButton();
 //
@@ -76,7 +77,7 @@ public class LoginTest extends BaseTest {
 //
 	}
 
-	@Test
+	@Test(priority=2)
 	public void CreateCustomer2() throws Exception {
 		// System.out.println("-------------------------------");
 		// getting to the url
@@ -86,11 +87,12 @@ public class LoginTest extends BaseTest {
 	//	Listeneres.extenttest.get().log(Status.INFO, "for test automation in part 1");
 		pages.getLoginPage().getURL("https://abhiabc.repairshopr.com/users/sign_in");
 
-		Assert.assertTrue(false);
+		
 		// Entering login credentials
 	//	Listeneres.extenttest.get().log(Status.INFO, "set email and password.");
 		pages.getLoginPage().SetEmailAndPassword("teststackshare@gmail.com", "Repairshop@12345");
 
+		Assert.assertTrue(false);
 		// Clicking On Login Button
 	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Login Button.");
 		pages.getLoginPage().ClickOnLoginButton();
