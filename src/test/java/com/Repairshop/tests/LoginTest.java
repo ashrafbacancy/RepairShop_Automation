@@ -43,41 +43,41 @@ public class LoginTest extends BaseTest {
 		pages.getLoginPage().SetEmailAndPassword("teststackshare@gmail.com", "Repairshop@12345");
 //
 //		// Clicking On Login Button
-//	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Login Button.");
+//		Listeneres.extenttest.get().log(Status.INFO, "Clicking On Login Button.");
 		pages.getLoginPage().ClickOnLoginButton();
 //
-		Assert.assertTrue(false);
+		
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Customer tab.");
-//		pages.getCustomersPage().clickOnCustomersButton();
+		pages.getCustomersPage().clickOnCustomersButton();
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Add Customer Button.");
-//		pages.getCustomersPage().ClickOnAddCustomersButton();
+		pages.getCustomersPage().ClickOnAddCustomersButton();
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Adding First Name.");
-//		pages.getNewCustomerPage().SetFirstName(FirstName);
+		pages.getNewCustomerPage().SetFirstName(FirstName);
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Adding Last Name.");
-//		pages.getNewCustomerPage().SetLastName(LastName);
+		pages.getNewCustomerPage().SetLastName(LastName);
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Adding Buisness Name.");
-//		pages.getNewCustomerPage().SetBuisnessName(BuisnessName);
+		pages.getNewCustomerPage().SetBuisnessName(BuisnessName);
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Adding Email Name.");
-//		pages.getNewCustomerPage().SetEmail(Email);
+		pages.getNewCustomerPage().SetEmail(Email);
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Selecting Phone options");
-//		pages.getNewCustomerPage().SelectPhoneOption();
+		pages.getNewCustomerPage().SelectPhoneOption();
 //
 //	//	Listeneres.extenttest.get().log(Status.INFO, "Clicking On Customer tab.");
-//		pages.getNewCustomerPage().ClickOnCreateCustomerbutton();
+		pages.getNewCustomerPage().ClickOnCreateCustomerbutton();
 //
 //		// test.log(Status.INFO, "Verifying the Success Message for customer
 //		// creation.");
-//		Assert.assertTrue(pages.getCustomersPage().verifySucessMessage(), "Success message is not displayed");
+		Assert.assertTrue(pages.getCustomersPage().verifySucessMessage(), "Success message is not displayed");
 //
 	}
 
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void CreateCustomer2() throws Exception {
 		// System.out.println("-------------------------------");
 		// getting to the url
