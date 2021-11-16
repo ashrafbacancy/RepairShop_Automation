@@ -121,7 +121,7 @@ public class BaseTest {
 		
 		return System.getProperty("user.dir") + "\\Report\\"+TestName+".png";
 		
-		
+	//added a comment	
 		
 	}
 	
