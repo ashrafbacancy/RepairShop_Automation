@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite]" parallel="methods">
-  <test name="Test(failed)" parallel="methods">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
     <classes>
       <class name="com.Repairshop.tests.LoginTest">
         <methods>
@@ -9,7 +9,6 @@
           <include name="SetUp"/>
           <include name="CreateCustomer"/>
           <include name="TearDown"/>
-          <include name="CreateCustomer2"/>
         </methods>
       </class> <!-- com.Repairshop.tests.LoginTest -->
     </classes>

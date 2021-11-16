@@ -37,6 +37,7 @@ public class LoginTest extends BaseTest {
 	//	Listeneres.extenttest.get().log(Status.INFO, "for test automation in part 1");
 		pages.getLoginPage().getURL("https://abhiabc.repairshopr.com/users/sign_in");
 
+		Assert.assertTrue(false);
 	
 		// Entering login credentials
 //	//	Listeneres.extenttest.get().log(Status.INFO, "set email and password.");
